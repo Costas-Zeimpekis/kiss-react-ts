@@ -1,0 +1,57 @@
+@import '../../index.scss';
+
+.Post {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  min-height: 485px;
+  display: flex;
+  flex-flow: column;
+}
+
+section.post-image {
+  min-height: 250px;
+  background-color: transparent;
+}
+
+section.post-data {
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  flex: 1;
+  padding: 20px;
+}
+
+.Post h2 {
+  margin: 0 0 0.83em;
+}
+
+.Post .post-description {
+  flex: 1;
+  margin: 0 0 25px;
+  color: $primaryColor;
+}
+
+.Post .post-category {
+  margin: 0;
+}
+
+.Post .post-icon {
+  color: $primaryColor;
+  margin: 0 5px 0 0;
+}
+
+@media (min-width: 500px) {
+  .Post {
+    width: 31%;
+  }
+
+  .section.post-image {
+    min-height: 200px;
+  }
+
+  .Post {
+    min-height: 320px;
+  }
+}

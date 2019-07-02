@@ -1,0 +1,60 @@
+@import '../../../index.scss';
+
+.Avatar {
+}
+
+.avatar-mobile {
+  height: 160px;
+  width: 150px;
+  margin: 60px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.avatar-mobile > div {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 100px;
+}
+
+.avatar-mobile > div > img {
+  border-radius: 50%;
+}
+
+.avatar-mobile figcaption {
+  color: #fff;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.avatar-desktop {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .avatar-desktop {
+    z-index: 1;
+    height: 156px;
+    display: flex;
+    width: $desktopWidth;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: auto;
+    position: relative;
+    top: -120px;
+    padding: 0 5px;
+  }
+
+  .avatar-desktop > div {
+    border: 3px solid white;
+    width: 156px;
+    border-radius: 5px;
+  }
+
+  .avatar-desktop figcaption {
+    margin: 0 0 50px 20px;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}

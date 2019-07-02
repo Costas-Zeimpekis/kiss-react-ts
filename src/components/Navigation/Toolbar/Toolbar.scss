@@ -1,0 +1,86 @@
+@import '../../../index.scss';
+.Toolbar {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .Toolbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #254a74;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .navigation-items {
+    margin: 0 30px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+  }
+
+  .toogle-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .toogle-item > span {
+    background-color: #4a90e2;
+    display: inline-block;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #c4c5c7;
+  }
+
+  .toogle-item > a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 16px 10px;
+    display: block;
+  }
+
+  .toogle-item > a > span {
+    display: inline-block;
+  }
+
+  .toolbar-submenu {
+    position: absolute;
+    width: 120px;
+    top: 50px;
+    padding: 10px 0;
+    background-color: white;
+    list-style: none;
+    display: none;
+    flex-flow: column;
+  }
+
+  .toolbar-submenu a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: block;
+  }
+
+  .toolbar-submenu a:hover {
+    background-color: #d1d5df;
+  }
+
+  .show-toolbar-submenu {
+    display: flex;
+  }
+
+  .hide-toolbar-submenu {
+    display: none;
+  }
+}
